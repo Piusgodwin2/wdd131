@@ -55,7 +55,7 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
-    .card {
+    /*.card {
       background-color: white;
       border: 1px solid #ddd;
       border-radius: 8px;
@@ -68,7 +68,19 @@ body {
       max-width: 100%;
       border-radius: 6px;
       margin-bottom: 1rem;
-    }
+    }*/
+
+    .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card img {
+  width: 120px;
+  border-radius: 8px;
+}
 
     footer {
       text-align: center;
