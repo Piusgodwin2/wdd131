@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .position-absolute {
+    position: static !important;
+    margin: 1rem auto !important;
+  }
+
+  .position-absolute .bg-success {
+    text-align: center;
+  }
+
+  section > div {
+    max-width: 90% !important;
+  }
+}

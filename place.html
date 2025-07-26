@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PLACES</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="place.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-secondary text-white text-center py-4">
+    <h1 class="display-4">Nigeria</h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="position-relative">
+    <img src="images/nigeria.jpg" alt="#" class="img-fluid w-100 d-block mx-auto max-width:500px">
+
+    <!-- Data Box -->
+    <div class="position-absolute top-0 start-0 m-3 bg-white bg-opacity-75 rounded shadow p-3" style="max-width: 300px;">
+      <h5 class="bg-success text-white p-2 rounded">Data</h5>
+      <ul class="list-unstyled small">
+        <li><strong>Area:</strong> 587,041 sq km</li>
+        <li><strong>Population:</strong> 27,691,018</li>
+        <li><strong>Capital:</strong> Abuja</li>
+        <li><strong>Languages:</strong> English, Hausa, Yoruba</li>
+        <li><strong>Currency:</strong> Naira</li>
+        <li><strong>Time Zone:</strong> UTC+3</li>
+        <li><strong>Calling Code:</strong> +234</li>
+      </ul>
+    </div>
+
+    <!-- Weather Box -->
+    <div class="position-absolute bottom-0 end-0 m-3 bg-white bg-opacity-75 rounded shadow p-3" style="max-width: 300px;">
+      <h5 class="bg-success text-white p-2 rounded">Weather 🌤️</h5>
+      <ul class="list-unstyled small">
+        <li><strong>Temperature:</strong> 10°C</li>
+        <li><strong>Conditions:</strong> Partly Cloudy</li>
+        <li><strong>Wind:</strong> 5 km/h</li>
+        <li><strong>Wind Chill:</strong> 9.8°C</li>
+      </ul>
+    </div>
+  </section>
+
+    <script src="place.js" defer></script>
+  <!-- Footer -->
+  <footer class="bg-secondary text-white text-center py-3 mt-4">
+  <p class="mb-1" id="copyright"></p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>
