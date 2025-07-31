@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- External Styles -->
+  <link rel="stylesheet" href="filtered.css">
+  <link rel="stylesheet" href="temples-large.css" media="(min-width: 768px)">
+</head>
+<body>
+
+  <header>
+     <div class="hamburger" id="hamburger">&#9776;</div>
+  <ul class="nav-menu" id="navMenu">
+    <li><button id ="home">Home</button></li>
+    <li><button id ="old">Old</button></li>
+    <li><button id ="new">New</button></li>
+    <li><button id ="large">Large</button></li>
+    <li><button id ="small">Small</button></li>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <div class ="Card-Container" id ="cardcontainer">
+    <!-- Cards will be inserted here by JavaScript -->
+  </div>
+    
+  </main>
+
+  <script src="filtered.js" defer></script>
+  <footer>
+    ©️2025 ⚓ Pius Godwin⚓Nigeria
+    <p>&copy; <span id="year"></span> Temple Album</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
