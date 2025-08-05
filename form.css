@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*.container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}*/
+
+.form-title {
+  background-color: #3b003b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.review-form {
+  background-color: #d3c7d1;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.review-form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.review-form select,
+.review-form input[type="date"],
+.review-form input[type="text"],
+.review-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.review-form textarea {
+  resize: vertical;
+}
+
+.rating {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.rating input {
+  margin-right: 5px;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.optional {
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: #2d0073;
+  margin-left: 0.3rem;
+}
+
+button[type="submit"] {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ddd;
+}
+
+.footer {
+  width: 100%;
+  background-color: #3b003b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #004d40;
+  margin: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .form-title {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .reviewForm {
+    padding: 1rem;
+  }
+
+  .reviewForm select,
+  .reviewForm input[type="text"],
+  .reviewForm input[type="date"],
+  .reviewForm textarea,
+  .reviewForm button {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+
+  .rating {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .checkbox-group label {
+    font-size: 0.95rem;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+}
