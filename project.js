@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const assignmentDate = new Date(assignment.dueDate);
     const daysLeft = Math.ceil((assignmentDate - today) / (1000 * 60 * 60 * 24));
 
-    // ✅ Show reminders
+    // Show reminders
     if (daysLeft < 0) {
       reminderSection.innerHTML += `<p class="overdue">🔔 "${assignment.title}" is overdue!</p>`;
     } else if (daysLeft === 0) {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
       reminderSection.innerHTML += `<p class="due-soon">📅 "${assignment.title}" is due in ${daysLeft} day(s)!</p>`;
     }
 
-    // ✅ Display the assignment card
+    // Display the assignment card
     const card = document.createElement("div");
     card.className = "assignment-card";
     card.innerHTML = `
