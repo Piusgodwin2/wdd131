@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Assigment</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Assignment</h1>
+    </header>
+    <main>
+        <form id="assignment-form">
+            <label for="title">Assigment Title: </label>
+            <input type="text" name="title" id="title" required>
+            <label for="course"> Course Name: </label>
+            <input type="text" name="course" id="course" required>
+            <label for="due-date">Due Date</label>
+            <input type="date" name="date" id="due-date" required>
+            <label for="notes">Notes (optional): </label>
+            <textarea name="notes" id="notes" rows="4"></textarea>
+            <button type="submit">Add Assignment</button>
+        </form>
+    </main>
+<script src="add.js" defer></script>
+</body>
+</html>
